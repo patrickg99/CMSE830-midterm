@@ -9,7 +9,7 @@ import holoviews as hv
 hv.extension('bokeh')
 import streamlit as st
 import pandas as pd
-gv13 = pd.read_csv('gv_data_2013-2018.csv', nrows = 279, dayfirst = True)
+gv13 = pd.read_csv('gv_data_2013.csv', nrows = 279, dayfirst = True)
 
 from bokeh.sampledata import us_states
 from bokeh.plotting import *
