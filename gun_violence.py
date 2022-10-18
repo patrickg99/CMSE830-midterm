@@ -39,7 +39,7 @@ p.patches(state_xs, state_ys, fill_alpha=0.0, line_color="#884444", line_width=1
 p.circle(x = 'x',y = 'y', size=8, color='green', alpha=0.5, source = source)
 
 
-show(p)
+st.bokeh_chart(p)
 
 
 
