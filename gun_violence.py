@@ -3,11 +3,10 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-from bokeh.io import output_notebook, show
+from bokeh.io import show
 from bokeh.plotting import figure
 import holoviews as hv
 hv.extension('bokeh')
-output_notebook()
 import streamlit as st
 import pandas as pd
 gv13 = pd.read_csv('gv_data_2013-2018.csv', nrows = 279, dayfirst = True)
@@ -39,7 +38,6 @@ p.patches(state_xs, state_ys, fill_alpha=0.0, line_color="#884444", line_width=1
 
 p.circle(x = 'x',y = 'y', size=8, color='green', alpha=0.5, source = source)
 
-output_file("Gun_Viloence_US_2013.html")
 
 show(p)
 
